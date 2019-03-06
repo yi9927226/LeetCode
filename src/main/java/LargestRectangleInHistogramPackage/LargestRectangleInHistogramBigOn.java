@@ -10,7 +10,7 @@ public class LargestRectangleInHistogramBigOn {
         int[] arr = new int[heights.length + 2];
         for (int i = 0; i < heights.length; ++i) arr[i + 1] = heights[i];
         for (int i = 0; i < arr.length; ++i) {
-            while (! stack.isEmpty() && arr[stack.peekLast()] > arr[i]) {
+            while (!stack.isEmpty() && arr[stack.peekLast()] > arr[i]) {
                 int height = arr[stack.pollLast()];
                 ret = Math.max(ret, (i - stack.peekLast() - 1) * height);
             }

@@ -1,8 +1,6 @@
-package LeetCode_917_ReverseOnlyLetters;
+package LeetCode_0917_ReverseOnlyLetters;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class ReverseOnlyLettersTest {
 
